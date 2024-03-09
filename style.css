@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(42, 40, 40);
+}
+
+#cv-form{
+   /*display: none;-->*/
+}
+#cv-template{
+    display: none;
+}
+
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background{
+    background-color:rgb(31, 29, 29);
+}
+
+.newground{
+    background-color: rgb(42, 122, 165);
+}
+
+.increased-height {
+    height: 650px; /* Set the height to your desired value */
+    border: 5px solid #e5e2e2;
+    padding: 20px;
+}
+.startpg{
+    color: black;
+}
+
+#-reach{
+    color: black;
+    font-weight:bold;
+    font-size:30px;
+}
+#geni{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    border: 5px solid #070707;
+}
+
+#app{
+    color: #070707;
+    font-weight: bold;
+}
+
+
+
+#social-head{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+#objectsize{
+    color: black;
+    height: 300px;
+}
+
+#frst{
+    font-weight: bold;
+
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PORTFOLIO</title>
+</head>
+
+<body>
+    <div class="container" id="cv-form">
+        <!-- <script class="conatainer" id="startpg">
+            let usernm=window.prompt("Enter Your Good Name Here");
+            if(usernm!==null){
+                window.alert("Hello,"+usernm+"  ");
+            }
+        </script> -->
+
+       
+        <h1 id="geni" class="text-center my-5">Generating Portfolio</h1>
+        <p class="text-center"> </p>
+
+        <div class="row">
+            <div class="col-md-5">
+            
+                <h3 id="-reach" >How To Reach Me</h3>
+                <div class="form-group mt-4">
+                    <label id="app"for="namefield"> Your Name</label>
+                    <input type="text" id="namefield" placeholder="Enter Here" class="form-control" />
+                </div>
+
+                <h1 class="text-center mt my-5"></h1>
+                <h2 id="frst" class="text-secondary my-1">Social Media Handles</h2>
+            
+                <div class="form-group mt-3">
+                    <label id="app" for="Linkdfield">Linkdin</label>
+                    <input 
+                        type="text" 
+                        id="Linkdfield" 
+                        placeholder="Enter Here" 
+                        class="form-control">
+                    </input>
+                </div>
+                <div class="form-group mt-2">
+                    <label id="app" for="Instfield">Instagram</label>
+                    <input 
+                        type="text" 
+                        id="Instfield" 
+                        placeholder="Enter Here" 
+                        class="form-control" 
+                    />
+                </div>
+                <div class="form-group mt-1">
+                    <label id="app" for="Twtfield">Twitter</label>
+                    <input 
+                        type="text" 
+                        id="Twtfield" 
+                        placeholder="Enter Here" 
+                        class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <label id="app" for="Gitfield">GitHub</label>
+                    <input 
+                        type="text" 
+                        id="Gitfield" 
+                        placeholder="Enter Here" 
+                        class="form-control" 
+                    />
+                </div>
+                <h1 class="text-center mt my-5"></h1>
+                <h2 id="frst" class="text-secondary my-1">How To Contact Me</h2>
+            
+                <div class="form-group mt-3">
+                    <label id="app" for="Mailfield">Mail</label>
+                    <input 
+                        type="text" 
+                        id="Mailfield" 
+                        placeholder="Enter Here" 
+                        class="form-control">
+                    </input>
+                </div>
+            
+                <div class="form-group mt-2">
+                    <label id="app" for="Phonefield">Phone Number</label>
+                    <input 
+                        type="text" 
+                        id="Phonefield" 
+                        placeholder="Enter Here" 
+                        class="form-control">
+                    </input>
+                </div>
+            </div>
+
+
+            <div class="col-md-7">
+
+                <!--secodn column -->
+
+                <h3  id="-reach">Professional Information</h3>
+
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea id="Objectivefield" rows="5" placeholder="Enter Here" class="form-control"></textarea>
+                </div>
+
+          
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea placeholder="Enter Here" class="form-control eqField" rows="3"></textarea>
+
+                    <div class="conatainer text-center mt-2" id="aqAddButton">
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="conatainer text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">
+                Generate CV
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <!--for template   2nd steppppppppp-->
+
+
+
+
+
+
+
+    <div class="conatainer" id="cv-template">
+        <div class="row">
+            <div class="col-md-3 text-center background increased-height">
+                <!--first colmn-->
+                
+
+                <div class="container">
+                    <div id="social-head" class="text-center mt-5">Social Media Handles</div>
+                    <p mt-3></p>
+                    <p> 
+                        <i class="fa-brands fa-square-instagram" style="color: #d60a0a;"></i>
+                        <a id="instaT" href="https://www.instagram.com/youngsheldoncbs/"></a>
+            
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-square-github"></i>
+                        <a id="gitT" href="#2">https://github.com/Lokeshranjan8</a>
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-linkedin" style="color: #1953b8;"></i>
+                        <a id="linkT" href="#3">https://www.linkedin.com/in/lokesh-ranjan-ba2ba0297/</a>
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                        <a id="twt" href="#4">https://twitter.com/hellocysu11766/</a>
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div id="social-head" class="text-center mt-4">Contact Me</div>
+                    <p>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a id="MLT" href="#1">https://www.instagram.com/youngsheldoncbs/</a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone" style="color: #3776e1;"></i>
+                        <a id="PHT" href="#2">123-456-7890</a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6 py-4">
+            
+                <!--second column--->
+
+               
+                <!--objective card-->
+
+                <div class="card mt-3" id="objectsize">
+                    <div class="card-header  ">
+                        <h3>About Myself</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="ObjectiveT">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolores vero illum, est ad itaque recusandae voluptatem nulla aspernatur. Veniam, nostrum perferendis deleniti in sed non praesentium atque blanditiis fugiat quia sint sapiente illo fuga magni est maiores, nobis alias, nulla repellat repudiandae quod vitae expedita at saepe! Odio, laboriosam?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolores vero illum, est ad itaque recusandae voluptatem nulla aspernatur. Veniam, nostrum perferendis deleniti in sed non praesentium atque blanditiis fugiat quia sint sapiente illo fuga magni est maiores, nobis alias, nulla repellat repudiandae quod vitae expedita at saepe! Odio, laboriosam?
+                        </p>
+                    </div>
+                </div>
+
+                
+
+                <!--academic qualification -->
+
+                <div class="card mt-3">
+                    <div class="card-header  ">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, magni?
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, magni?
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, magni?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
